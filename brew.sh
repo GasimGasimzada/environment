@@ -27,6 +27,7 @@ brew install wget
 brew install youtube-dl
 
 # Languages
+brew install python
 brew install python3
 brew install go
 

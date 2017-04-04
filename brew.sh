@@ -1,5 +1,8 @@
 # Homebrew installations
 
+# Install caskroom
+brew tap caskroom/cask
+
 # Applications
 brew cask install alfred
 brew cask install google-chrome

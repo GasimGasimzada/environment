@@ -1,6 +1,7 @@
 # Homebrew installations
 
 # Applications
+brew cask install alfred
 brew cask install google-chrome
 brew cask install firefox
 brew cask install vivaldi

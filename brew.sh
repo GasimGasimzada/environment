@@ -5,6 +5,7 @@
 
 # Install caskroom
 brew tap caskroom/cask
+brew tap caskroom/fonts
 
 # Applications
 brew cask install alfred
@@ -19,6 +20,8 @@ brew cask install java
 brew cask install sequel-pro
 brew cask install docker-toolbox
 brew cask install postman
+
+brew cask install sketch
 
 brew cask install handbrake
 brew cask install vlc

@@ -7,6 +7,9 @@
 brew tap caskroom/cask
 brew tap caskroom/fonts
 
+# Install MAS
+brew install mas
+
 # Applications
 brew cask install alfred
 brew cask install google-chrome

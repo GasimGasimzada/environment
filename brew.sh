@@ -18,6 +18,7 @@ brew cask install cocoarestclient
 brew cask install java
 brew cask install sequel-pro
 brew cask install docker-toolbox
+brew cask install postman
 
 brew cask install handbrake
 brew cask install vlc

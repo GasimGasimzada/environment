@@ -45,3 +45,8 @@ brew install python
 brew install python3
 brew install go
 
+# Build tools
+brew install carthage
+
+# Other
+brew install pwgen

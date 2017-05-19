@@ -29,6 +29,7 @@ cask "transmission"
 cask "1password"
 cask "airserver"
 cask "appcleaner"
+cask "adobe-acrobat-reader"
 
 # cli utilities
 brew "wget"

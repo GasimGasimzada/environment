@@ -55,9 +55,14 @@ cask "postman"
 # text editors
 cask "sublime-text"
 
-# other dev tools
-cask "docker-toolbox"
+# Docker
+cask "docker"
+cask "kitematic"
+
+# File client
 cask "transmit"
+
+# Build tools
 brew "carthage"
 
 # mas apps

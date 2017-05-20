@@ -4,6 +4,9 @@ cask_args appdir: '/Applications'
 # caskroom
 tap "caskroom/cask"
 
+# zsh
+brew "zsh"
+
 # mas
 brew "mas"
 

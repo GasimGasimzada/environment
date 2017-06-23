@@ -70,6 +70,7 @@ cask "transmit"
 brew "carthage"
 
 # mas apps
+mas "Bear", id: 1091189122
 mas "GarageBand", id: 682658836
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694

@@ -61,6 +61,7 @@ cask "sublime-text"
 # Docker
 cask "docker"
 cask "kitematic"
+cask "dockstation"
 
 # File client
 cask "transmit"

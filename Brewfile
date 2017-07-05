@@ -33,11 +33,13 @@ cask "1password"
 cask "airserver"
 cask "appcleaner"
 cask "adobe-acrobat-reader"
+cask "tunnelblick"
 
 # cli utilities
 brew "wget"
 brew "youtube-dl"
 brew "pwgen"
+brew "imagemagick"
 
 # office365
 cask "microsoft-office"

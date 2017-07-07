@@ -16,7 +16,7 @@ cask "google-chrome"
 cask "vivaldi"
 
 # video tools
-cask "vlc"
+cask "iina"
 cask "handbrake"
 
 # chat apps

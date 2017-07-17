@@ -37,6 +37,7 @@ cask "tunnelblick"
 
 # cli utilities
 brew "wget"
+brew "svgo"
 brew "youtube-dl"
 brew "pwgen"
 brew "imagemagick"
@@ -45,6 +46,7 @@ brew "imagemagick"
 cask "microsoft-office"
 
 # languages
+brew "node"
 brew "python"
 brew "python3"
 cask "java"

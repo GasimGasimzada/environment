@@ -53,7 +53,7 @@ cask "java"
 
 # database utilities
 cask "sequel-pro"
-cask "robomongo"
+cask "robo-3t"
 
 # rest clients
 cask "cocoarestclient"

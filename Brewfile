@@ -50,6 +50,7 @@ brew "node"
 brew "python"
 brew "python3"
 brew "erlang"
+brew "elixir"
 cask "java"
 
 # database utilities

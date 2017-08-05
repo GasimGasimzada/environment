@@ -49,6 +49,7 @@ cask "microsoft-office"
 brew "node"
 brew "python"
 brew "python3"
+brew "erlang"
 cask "java"
 
 # database utilities

@@ -3,6 +3,7 @@ cask_args appdir: '/Applications'
 
 # caskroom
 tap "caskroom/cask"
+tap "caskroom/versions"
 
 # zsh
 brew "zsh"
@@ -70,7 +71,7 @@ cask "kitematic"
 cask "dockstation"
 
 # File client
-cask "transmit"
+cask "transmit4"
 
 # Build tools
 brew "carthage"

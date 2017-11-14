@@ -4,6 +4,7 @@ cask_args appdir: '/Applications'
 # caskroom
 tap "caskroom/cask"
 tap "caskroom/versions"
+tap "caskroom/fonts"
 
 # zsh
 brew "zsh"
@@ -35,6 +36,8 @@ cask "airserver"
 cask "appcleaner"
 cask "adobe-acrobat-reader"
 cask "tunnelblick"
+cask "spectacle"
+cask "tomighty"
 
 # cli utilities
 brew "wget"
@@ -71,10 +74,14 @@ cask "kitematic"
 cask "dockstation"
 
 # File client
-cask "transmit4"
+cask "caskroom/versions/transmit4"
 
 # Build tools
 brew "carthage"
+
+# Fonts
+cask "caskroom/fonts/font-menlo-for-powerline"
+cask "caskroom/fonts/font-raleway"
 
 # mas apps
 mas "Bear", id: 1091189122

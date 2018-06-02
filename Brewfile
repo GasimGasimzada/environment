@@ -46,6 +46,7 @@ brew "svgo"
 brew "youtube-dl"
 brew "pwgen"
 brew "imagemagick"
+brew "tig"
 
 # office365
 cask "microsoft-office"

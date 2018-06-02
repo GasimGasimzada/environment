@@ -85,6 +85,10 @@ brew "carthage"
 cask "caskroom/fonts/font-menlo-for-powerline"
 cask "caskroom/fonts/font-raleway"
 
+# Games
+cask "openttd"
+cask "0-ad"
+
 # mas apps
 mas "Bear", id: 1091189122
 mas "GarageBand", id: 682658836

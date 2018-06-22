@@ -47,6 +47,7 @@ brew "youtube-dl"
 brew "pwgen"
 brew "imagemagick"
 brew "tig"
+brew "jq"
 
 # office365
 cask "microsoft-office"

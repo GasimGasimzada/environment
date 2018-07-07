@@ -1,10 +1,8 @@
-# caskroom appdir
-cask_args appdir: '/Applications'
-
-# caskroom
-tap "caskroom/cask"
-tap "caskroom/versions"
-tap "caskroom/fonts"
+# Repos
+tap "homebrew/cask"
+tap "homebrew/cask-versions"
+tap "homebrew/cask-fonts"
+tap "homebrew/services"
 
 # zsh
 brew "zsh"
@@ -20,6 +18,7 @@ cask "vivaldi"
 # video tools
 cask "iina"
 cask "handbrake"
+cask "vlc"
 
 # chat apps
 cask "whatsapp"
@@ -48,13 +47,13 @@ brew "pwgen"
 brew "imagemagick"
 brew "tig"
 brew "jq"
+brew "tmux"
 
 # office365
 cask "microsoft-office"
 
 # languages
 brew "node"
-brew "python"
 brew "python3"
 brew "erlang"
 brew "elixir"
@@ -67,6 +66,10 @@ cask "robo-3t"
 # rest clients
 cask "cocoarestclient"
 cask "postman"
+
+# Disk Creators
+cask "install-disk-creator"
+cask "etcher"
 
 # text editors
 cask "sublime-text"
@@ -85,6 +88,9 @@ brew "carthage"
 # Fonts
 cask "caskroom/fonts/font-menlo-for-powerline"
 cask "caskroom/fonts/font-raleway"
+
+# Services
+brew "postgresql", restart_service: true
 
 # Games
 cask "openttd"

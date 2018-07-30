@@ -37,7 +37,8 @@ cask "adobe-acrobat-reader"
 cask "tunnelblick"
 cask "spectacle"
 cask "tomighty"
-casl "itsycal"
+cask "itsycal"
+cask "fanny"
 
 # cli utilities
 brew "wget"

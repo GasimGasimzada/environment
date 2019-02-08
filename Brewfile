@@ -73,7 +73,7 @@ cask "install-disk-creator"
 cask "etcher"
 
 # text editors
-cask "sublime-text"
+cask "visual-studio-code"
 
 # Docker
 cask "docker"
@@ -92,6 +92,9 @@ cask "caskroom/fonts/font-raleway"
 
 # Services
 brew "postgresql", restart_service: true
+
+# Design tools
+cask "figma"
 
 # Games
 cask "openttd"

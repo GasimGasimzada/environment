@@ -58,6 +58,7 @@ brew "node"
 brew "python3"
 brew "erlang"
 brew "elixir"
+brew "yarn"
 cask "java"
 
 # database utilities

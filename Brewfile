@@ -1,7 +1,6 @@
 # Repos
 tap "homebrew/cask"
 tap "homebrew/cask-versions"
-tap "homebrew/cask-fonts"
 tap "homebrew/services"
 
 # zsh
@@ -12,8 +11,7 @@ brew "mas"
 
 # browsers
 cask "firefox"
-cask "google-chrome"
-cask "vivaldi"
+cask "brave-browser"
 
 # video tools
 cask "iina"
@@ -25,7 +23,7 @@ cask "whatsapp"
 cask "slack"
 
 # utilities
-cask "alfred"
+cask "homebrew/cask-versions/alfred3"
 cask "bartender"
 cask "keepingyouawake"
 cask "the-unarchiver"
@@ -50,11 +48,7 @@ brew "tig"
 brew "jq"
 brew "tmux"
 
-# office365
-cask "microsoft-office"
-
 # languages
-brew "node"
 brew "python3"
 brew "erlang"
 brew "elixir"
@@ -66,12 +60,11 @@ cask "sequel-pro"
 cask "robo-3t"
 
 # rest clients
-cask "cocoarestclient"
 cask "postman"
 
 # Disk Creators
 cask "install-disk-creator"
-cask "etcher"
+cask "balenaetcher"
 
 # text editors
 cask "visual-studio-code"
@@ -82,14 +75,14 @@ cask "kitematic"
 cask "dockstation"
 
 # File client
-cask "caskroom/versions/transmit4"
+cask "homebrew/cask-versions/transmit4"
 
 # Build tools
 brew "carthage"
 
-# Fonts
-cask "caskroom/fonts/font-menlo-for-powerline"
-cask "caskroom/fonts/font-raleway"
+# office365
+cask "microsoft-office"
+
 
 # Services
 brew "postgresql", restart_service: true
@@ -111,3 +104,4 @@ mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
 mas "Parcel", id: 639968404
 mas "Xcode", id: 497799835
+mas "Wipr", id: 1320666476 

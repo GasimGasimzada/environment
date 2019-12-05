@@ -1,1 +1,2 @@
-defaults write com.apple.screencapture location /Users/gasim/Screenshots
+mkdir -p ~/Screenshots
+defaults write com.apple.screencapture location ~/Screenshots

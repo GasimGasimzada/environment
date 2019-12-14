@@ -10,6 +10,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle pip
 antigen bundle npm
+antigen bundle zsh-users/zsh-syntax-highlighting
 
 # Apply powerlevel9k theme
 antigen theme bhilburn/powerlevel9k powerlevel9k

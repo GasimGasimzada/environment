@@ -2,9 +2,9 @@
 tap "homebrew/cask-fonts"
 
 # Fonts
-cask "homebrew/cask-fonts/font-menlo-for-powerline"
-cask "homebrew/cask-fonts/font-raleway"
-cask "homebrew/cask-fonts/font-open-sans"
-cask "homebrew/cask-fonts/font-roboto"
-cask "homebrew/cask-fonts/font-montserrat"
-cask "homebrew/cask-fonts/font-fira-code"
+cask "font-menlo-for-powerline"
+cask "font-raleway"
+cask "font-open-sans"
+cask "font-roboto"
+cask "font-montserrat"
+cask "font-fira-code"

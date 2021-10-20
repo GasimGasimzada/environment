@@ -1,7 +1,7 @@
 # Load Antigen and Powerlevel9k
-source ~/.antigenrc
-source ~/.powerlevel9k
-source ~/.zshenv
+source ~/.gasim-env/.antigenrc
+source ~/.gasim-env/.nvmrc
+source ~/.gasim-env/.env
 
 # Load Oh My ZSH
 antigen use oh-my-zsh
@@ -12,8 +12,7 @@ antigen bundle pip
 antigen bundle npm
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-# Apply powerlevel9k theme
-antigen theme bhilburn/powerlevel9k powerlevel9k
-
 # Apply Antigen
 antigen apply
+
+eval "$(oh-my-posh --init --shell zsh --config ~/.gasim-env/gasim.omp.json)"

@@ -1,0 +1,45 @@
+{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh3/main/themes/schema.json",
+  "blocks": [
+    {
+      "type": "prompt",
+      "alignment": "left",
+      "segments": [
+        {
+          "type": "path",
+          "style": "powerline",
+          "foreground": "white",
+          "background": "black",
+          "powerline_symbol": "",
+          "properties": {
+            "home_icon": "~",
+            "style": "agnoster_short",
+            "max_depth": 3
+          }
+        },
+        {
+          "type": "git",
+          "style": "powerline",
+          "powerline_symbol": "",
+          "foreground": "black",
+          "background": "lightGreen",
+          "exclude_folders": ["/Users/gasim/.git"],
+          "properties": {
+            "branch_icon": "\uF126 ",
+            "display_stash_count": false,
+            "display_status_detail": false,
+            "display_branch_status": false,
+            "display_status": true,
+            "status_colors_enabled": true,
+            "local_changes_color": "yellow",
+            "stash_count_icon": "\uF692 "
+          }
+        }
+      ]
+    }
+  ],
+  "final_space": true,
+  "console_title": true,
+  "console_title_style": "template",
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}"
+}

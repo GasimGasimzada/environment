@@ -1,10 +1,12 @@
 # Repos
-tap "homebrew/cask"
 tap "homebrew/cask-versions"
 tap "homebrew/services"
+tap "jandedobbeleer/oh-my-posh"
 
-# zsh
+# zsh and powershell
 brew "zsh"
+brew "oh-my-posh"
+brew powershell
 
 # mas
 brew "mas"
@@ -32,11 +34,8 @@ cask "1password"
 cask "airserver"
 cask "appcleaner"
 cask "adobe-acrobat-reader"
-cask "tunnelblick"
 cask "spectacle"
-cask "tomighty"
-cask "itsycal"
-cask "fanny"
+cask "notion"
 
 # cli utilities
 brew "wget"
@@ -50,8 +49,6 @@ brew "tmux"
 
 # languages
 brew "python3"
-brew "erlang"
-brew "elixir"
 brew "yarn"
 cask "java"
 
@@ -71,18 +68,12 @@ cask "visual-studio-code"
 
 # Docker
 cask "docker"
-cask "kitematic"
-cask "dockstation"
 
 # File client
 cask "homebrew/cask-versions/transmit4"
 
-# Build tools
-brew "carthage"
-
 # office365
 cask "microsoft-office"
-
 
 # Services
 brew "postgresql", restart_service: true
@@ -92,7 +83,6 @@ cask "figma"
 
 # Games
 cask "openttd"
-cask "0-ad"
 
 # mas apps
 mas "Bear", id: 1091189122

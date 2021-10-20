@@ -6,6 +6,17 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "text",
+          "style": "diamond",
+          "foreground": "black",
+          "background": "black",
+          "properties": {
+            "text": "\u0000",
+            "prefix": "",
+            "postfix": ""
+          }
+        },
+        {
           "type": "path",
           "style": "powerline",
           "foreground": "white",
@@ -14,7 +25,8 @@
           "properties": {
             "home_icon": "~",
             "style": "agnoster_short",
-            "max_depth": 3
+            "max_depth": 3,
+            "prefix": ""
           }
         },
         {

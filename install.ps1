@@ -9,3 +9,6 @@ cp gasim.omp.json ~/.gasim-env
 # Setup powershell profile
 New-Item -Path $PROFILE -ItemType File -Force
 echo ". ~/.gasim-env/gasim.ps1" > $PROFILE
+
+# Install plugins
+Install-Module Terminal-Icons -Scope CurrentUser

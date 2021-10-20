@@ -15,4 +15,5 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 # Apply Antigen
 antigen apply
 
+# Init Oh-my-posh
 eval "$(oh-my-posh --init --shell zsh --config ~/.gasim-env/gasim.omp.json)"

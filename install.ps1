@@ -10,4 +10,5 @@ New-Item -Path $PROFILE -ItemType File -Force
 Write-Output ". ~/.gasim-env/gasim.ps1" > $PROFILE
 
 # Install plugins
-Install-Module Terminal-Icons -Scope CurrentUser
+Install-Module Terminal-Icons -Scope CurrentUser -Force
+Install-Module posh-git -Scope CurrentUser -Force

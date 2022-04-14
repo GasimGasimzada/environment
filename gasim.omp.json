@@ -1,57 +1,50 @@
 {
-  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh3/main/themes/schema.json",
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
   "blocks": [
     {
-      "type": "prompt",
       "alignment": "left",
       "segments": [
         {
-          "type": "text",
-          "style": "diamond",
-          "foreground": "black",
           "background": "black",
-          "properties": {
-            "text": "\u0000",
-            "prefix": "",
-            "postfix": ""
-          }
+          "foreground": "black",
+          "style": "diamond",
+          "template": "\u0000",
+          "type": "text"
         },
         {
-          "type": "path",
-          "style": "powerline",
-          "foreground": "white",
           "background": "black",
-          "powerline_symbol": "",
+          "foreground": "white",
+          "powerline_symbol": "\ue0b0",
           "properties": {
             "home_icon": "~",
-            "style": "agnoster_short",
             "max_depth": 3,
-            "prefix": ""
-          }
+            "style": "agnoster_short"
+          },
+          "style": "powerline",
+          "template": "{{ .Path }} ",
+          "type": "path"
         },
         {
-          "type": "git",
-          "style": "powerline",
-          "powerline_symbol": "",
-          "foreground": "black",
           "background": "lightGreen",
-          "exclude_folders": ["/Users/gasim/.git"],
+          "background_templates": [
+            "{{ if or (.Working.Changed) (.Staging.Changed) }}yellow{{ end }}"
+          ],
+          "foreground": "black",
+          "powerline_symbol": "\ue0b0",
           "properties": {
-            "branch_icon": "\uF126 ",
-            "display_stash_count": false,
-            "display_status_detail": false,
-            "display_branch_status": false,
-            "display_status": true,
-            "status_colors_enabled": true,
-            "local_changes_color": "yellow",
-            "stash_count_icon": "\uF692 "
-          }
+            "branch_icon": "\uf126 ",
+            "fetch_stash_count": false,
+            "fetch_status": true
+          },
+          "style": "powerline",
+          "template": " {{ .HEAD }} {{ if .Working.Changed }}\uf044{{ end }}{{ if .Staging.Changed }} \uf046 {{ end }}{{ if gt .WorktreeCount 0}} \uf1bb {{ end }} ",
+          "type": "git"
         }
-      ]
+      ],
+      "type": "prompt"
     }
   ],
+  "console_title_template": "{{ .Shell }} in {{ .Folder }}",
   "final_space": true,
-  "console_title": true,
-  "console_title_style": "template",
-  "console_title_template": "{{ .Shell }} in {{ .Folder }}"
+  "version": 2
 }

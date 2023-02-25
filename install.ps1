@@ -9,6 +9,10 @@ Copy-Item gasim.omp.json ~/.gasim-env
 New-Item -Path $PROFILE -ItemType File -Force
 Write-Output ". ~/.gasim-env/gasim.ps1" > $PROFILE
 
+# Copy git commands
+mkdir -p ~/.gasim-env/bin
+Copy-Item ./git-commands/*.ps1 -Destination ~/.gasim-env/bin -Recurse
+
 # Install plugins
 Install-Module Terminal-Icons -Scope CurrentUser -Force
 Install-Module posh-git -Scope CurrentUser -Force

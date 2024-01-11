@@ -6,7 +6,11 @@ tap "jandedobbeleer/oh-my-posh"
 # zsh and powershell
 brew "zsh"
 brew "oh-my-posh"
-brew powershell
+brew "powershell"
+brew "lazygit"
+brew "ripgrep"
+brew "fd"
+brew "neovim"
 
 # mas
 brew "mas"

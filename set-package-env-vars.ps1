@@ -5,3 +5,4 @@ setx /M PIP_CACHE_DIR D:\.cache\pip
 setx /M CARGO_HOME D:\.cache\cargo
 setx /M YARN_CACHE_FOLDER D:\.cache\yarn
 setx /M NUGET_PACKAGES D:\.cache\.nuget
+pnpm config set store-dir D:\.cache\pnpm

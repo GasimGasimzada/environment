@@ -1,4 +1,5 @@
 vim.g.mapleader = " "
+
 vim.o.relativenumber = true
 
 vim.api.nvim_set_option("tabstop", 2)

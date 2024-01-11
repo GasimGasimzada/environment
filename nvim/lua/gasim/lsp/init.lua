@@ -20,14 +20,6 @@ require("mason-lspconfig").setup({
   },
 })
 
-local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-require("mason-lspconfig").setup_handlers({
-  function(serverName)
-    require("lspconfig")[serverName].setup({ capabilities = capabilities })
-  end,
-})
-
 local cmp = require("cmp")
 
 cmp.setup({

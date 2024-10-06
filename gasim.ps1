@@ -1,5 +1,5 @@
 # Init Oh-my-posh
-oh-my-posh --init --shell pwsh --config ~/.gasim-env/gasim.omp.json | Invoke-Expression
+oh-my-posh --init --shell pwsh --config ~/.config/gasim/gasim.omp.json | Invoke-Expression
 
 # Enable tab menu completion
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete

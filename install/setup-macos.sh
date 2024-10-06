@@ -1,3 +1,4 @@
+#!/bin/zsh
 print_setup() {
     printf "\e[0;34m$1\033[0m"
 }
@@ -25,23 +26,6 @@ change_screenshots_dir() {
     print_done
 }
 
-setup_nvm() {
-    print_setup "Setting up NVM... "
-
-    curl -so- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.1/install.sh | bash
-
-    export NVM_DIR="$HOME/.nvm"
-    [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
-
-    # Install Node latest
-    nvm install node
-
-    # Install Node LTS
-    nvm install lts/*
-
-    print_done
-}
-
 hide_desktop() {
     print_setup "Hiding desktop... "
     defaults write com.apple.finder CreateDesktop -bool false
@@ -49,28 +33,13 @@ hide_desktop() {
     print_done
 }
 
-setup_zsh() {
-    print_setup "Setting up ZSH... "
-    ./install.zsh
-    print_done
-}
-
-setup_vim() {
-    print_setup "Setting up VIM... "
-
-    curl -SsL https://raw.githubusercontent.com/Shougo/dein.vim/master/bin/installer.sh > installer.sh
-    sh installer.sh ~/.vim/dein > /dev/null
-    cp .vimrc ~/.vimrc
-
-    # Cleanup
-    rm installer.sh
-
+setup_env() {
+    print_setup "Setting up environment... "
+    ./install.sh
     print_done
 }
 
 install_homebrew
 change_screenshots_dir
 hide_desktop
-setup_zsh
-setup_vim
-setup_nvm
+setup_env()

@@ -1,4 +1,4 @@
 #!/bin/zsh
-echo "source ~/.config/gasim/gasim.zshrc" > ~/.zshrc
+echo "source ~/.config/gasim/gasim.zshrc" >> ~/.zshrc
 
-cp -r nvim ~/.config/nvim
+cp -r ~/.config/gasim/nvim ~/.config/nvim

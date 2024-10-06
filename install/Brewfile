@@ -1,22 +1,19 @@
 # Repos
 tap "jandedobbeleer/oh-my-posh"
 
-# zsh and powershell
 brew "zsh"
 brew "oh-my-posh"
+cask "powershell"
+cask "iterm2"
+
+cask "keepingyouawake"
+cask "the-unarchiver"
+cask "appcleaner"
+brew "svgo"
 brew "lazygit"
 brew "ripgrep"
 brew "fd"
 brew "neovim"
 brew "fnm"
-cask "powershell"
 
-# utilities
-brew "wget"
-cask "keepingyouawake"
-cask "the-unarchiver"
-cask "appcleaner"
-brew "svgo"
-
-# text editors
 cask "visual-studio-code"

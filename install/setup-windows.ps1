@@ -1,6 +1,12 @@
-# Install Chocolatey
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-
-. Chocofile.ps1
-
+# Install packages
+winget install JanDeDobbeleer.OhMyPosh -s winget
+winget install Microsoft.VisualStudioCode
+winget install Neovim.Neovim
+winget install BurntSushi.ripgrep.MSVC
+winget install sharkdp.fd
 winget install Schniz.fnm
+winget install ajeetdsouza.zoxide
+winget install --id Microsoft.WindowsTerminal -e
+winget install wez.wezterm
+
+. install.ps1

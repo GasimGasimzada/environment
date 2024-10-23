@@ -4,3 +4,9 @@ export OMP_CACHE_DIR=$GASIM_ENV/.cache
 
 eval "$(oh-my-posh --init --shell zsh --config $GASIM_ENV/gasim.omp.json)"
 eval "$(fnm env --use-on-cd --shell zsh)"
+eval "$(zoxide init zsh)"
+
+autoload -Uz compinit && compinit
+zstyle ":completion:*" menu select
+
+alias cd="z"

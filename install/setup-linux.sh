@@ -1,4 +1,4 @@
-#!/bin/zsh
+#!/bin/bash
 print_setup() {
     printf "\e[0;34m$1\033[0m"
 }
@@ -10,26 +10,13 @@ print_done() {
 install_homebrew() {
     print_setup "Downloading Homebrew"
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+    eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
     # install homebrew bundle
     brew tap homebrew/bundle
 
     # install apps from brewfile
     brew bundle
-    print_done
-}
-
-change_screenshots_dir() {
-    print_setup "Changing Screenshots directory to ~/Screenshots... "
-    mkdir -p ~/Screenshots
-    defaults write com.apple.screencapture location ~/Screenshots
-    print_done
-}
-
-hide_desktop() {
-    print_setup "Hiding desktop... "
-    defaults write com.apple.finder CreateDesktop -bool false
-    killall Finder
     print_done
 }
 
@@ -40,6 +27,4 @@ setup_env() {
 }
 
 install_homebrew
-change_screenshots_dir
-hide_desktop
-setup_env()
+setup_env

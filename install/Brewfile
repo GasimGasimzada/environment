@@ -1,10 +1,9 @@
 # Repos
 tap "jandedobbeleer/oh-my-posh"
-tap "powershell/tap"
 
 brew "zsh"
 brew "oh-my-posh"
-brew "powershell"
+cask "powershell"
 brew "zoxide"
 
 cask "keepingyouawake"

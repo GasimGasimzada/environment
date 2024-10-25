@@ -35,7 +35,7 @@ hide_desktop() {
 
 setup_env() {
     print_setup "Setting up environment... "
-    powershell install.ps1
+    pwsh install.ps1
     print_done
 }
 

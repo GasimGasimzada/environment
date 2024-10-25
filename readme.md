@@ -2,7 +2,7 @@
 
 ## Installation
 
-1. Clone this repo to ~/.config/gasim directory
+1. Clone this repo to `~/.config/gasim` directory
 2. `cd install`
 3. For linux, run `sh setup-linux.sh`
 4. For macOS, run `sh setup-macos.sh`

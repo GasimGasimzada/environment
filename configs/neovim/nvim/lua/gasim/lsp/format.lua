@@ -12,7 +12,5 @@ conform.setup({
     markdown = { "prettierd" },
     lua = { "stylua" },
   },
-  format_on_save = {
-    async = true,
-  },
+  format_on_save = {},
 })

@@ -4,6 +4,7 @@ require("neo-tree").setup({
       enabled = true,
       leave_dirs_open = true,
     },
+    hijack_netrw_behavior = "open_current",
   },
   window = {
     position = "float",

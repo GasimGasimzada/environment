@@ -1,4 +1,9 @@
-$NeovimPath = "~/.config/nvim"
+if ($IsWindows) {
+  $NeovimPath = "$env:LOCALAPPDATA/nvim"
+} else {
+  $NeovimPath = "~/.config/nvim"
+}
+
 if (Test-Path $NeovimPath) {
   Remove-Item -Force $NeovimPath -Recurse
 }

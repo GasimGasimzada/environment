@@ -9,7 +9,7 @@ end)
 require("mason").setup({})
 require("mason-lspconfig").setup({
   ensure_installed = {
-    "tsserver",
+    "ts_ls",
     "html",
     "tailwindcss",
     "lua_ls",

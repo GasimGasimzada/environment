@@ -1,6 +1,6 @@
 # Env vars
 $env:GASIM_ENV = "$HOME/.config/gasim"
-$env:PATH += "$env:GASIM_ENV/bin/ps1"
+$env:PATH += ";$env:GASIM_ENV/bin/ps1"
 $env:OMP_CACHE_DIR = "$env:GASIM_ENV/.cache"
 
 

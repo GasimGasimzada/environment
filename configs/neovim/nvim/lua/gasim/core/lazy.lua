@@ -13,6 +13,9 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   {
+    "MagicDuck/grug-far.nvim",
+  },
+  {
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
   },

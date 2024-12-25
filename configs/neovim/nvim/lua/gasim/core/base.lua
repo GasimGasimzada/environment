@@ -2,6 +2,8 @@ vim.g.mapleader = " "
 vim.g.maplocalleader = ";"
 vim.o.number = true
 vim.o.relativenumber = true
+vim.o.ignorecase = true
+vim.o.smartcase = true
 vim.g.loaded_ruby_provider = 0
 vim.g.loaded_perl_provider = 0
 vim.api.nvim_set_option("tabstop", 2)

@@ -6,6 +6,9 @@ require("neo-tree").setup({
     },
     hijack_netrw_behavior = "open_current",
   },
+  buffers = {
+    follow_current_file = { enabled = true },
+  },
   window = {
     position = "float",
     mappings = {
@@ -18,6 +21,6 @@ require("neo-tree").setup({
 vim.api.nvim_set_keymap(
   "n",
   "<leader>tr",
-  ":Neotree<CR>",
+  ":Neotree reveal<CR>",
   { noremap = true, silent = true }
 )

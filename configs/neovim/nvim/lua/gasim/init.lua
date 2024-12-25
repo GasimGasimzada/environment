@@ -1,5 +1,6 @@
 require("gasim.core.base")
 require("gasim.core.lazy")
+require('gasim.core.treesitter')
 require("gasim.lsp")
 require("gasim.telescope")
 require("gasim.theme")

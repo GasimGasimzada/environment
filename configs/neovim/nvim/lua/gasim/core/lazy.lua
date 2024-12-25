@@ -26,8 +26,15 @@ require("lazy").setup({
   },
   {
     "nvim-telescope/telescope.nvim",
-    tag = "0.1.5",
+    tag = "0.1.8",
     dependencies = { "nvim-lua/plenary.nvim" },
+  },
+  {
+    "nvim-telescope/telescope-frecency.nvim",
+    version = "1.0.0",
+    config = function()
+      require("telescope").load_extension("frecency")
+    end,
   },
   {
     "nvim-tree/nvim-web-devicons",

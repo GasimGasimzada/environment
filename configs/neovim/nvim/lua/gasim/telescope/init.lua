@@ -1,5 +1,15 @@
-local builtins = require("telescope.builtin")
+local themes = require("telescope.themes")
 
-vim.keymap.set("n", "<leader>ff", builtins.find_files, {})
-vim.keymap.set("n", "<leader>fb", builtins.buffers, {})
-vim.keymap.set("n", "<leader>fh", builtins.help_tags, {})
+require("telescope").setup({
+  defaults = themes.get_dropdown({
+    preview = false,
+    layout_config = { width = 0.5, height = 0.75 },
+  }),
+})
+
+vim.keymap.set("n", "<leader>ff", function()
+  require("telescope").extensions.frecency.frecency({
+    workspace = "CWD",
+    path_display = { "filename_first" },
+  })
+end)

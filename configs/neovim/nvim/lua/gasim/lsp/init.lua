@@ -43,5 +43,31 @@ cmp.setup({
   }, { name = "buffer" }),
 })
 
-require("gasim.lsp.trouble")
-require("gasim.lsp.format")
+vim.keymap.set("n", "<leader>gx", function()
+  require("trouble").toggle("diagnostics")
+end)
+
+vim.keymap.set("n", "ge", function()
+  vim.diagnostic.open_float()
+end)
+
+local conform = require("conform")
+conform.setup({
+  formatters_by_ft = {
+    javascript = { "prettierd", "biome" },
+    typescript = { "prettierd", "biome" },
+    javascriptreact = { "prettierd", "biome" },
+    typescriptreact = { "prettierd", "biome" },
+    css = { "prettierd" },
+    html = { "prettierd" },
+    json = { "prettierd" },
+    yaml = { "prettierd" },
+    markdown = { "prettierd" },
+    lua = { "stylua" },
+  },
+  format_on_save = {},
+  formatters = {
+    prettierd = { require_cwd = true },
+    biome = { require_cwd = true },
+  },
+})

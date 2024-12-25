@@ -1,14 +1,14 @@
 vim.keymap.set(
   "n",
   "<leader>sv",
-  ":vsplit<CR>",
+  ":vsplit<CR><C-w>l",
   { noremap = true, silent = true }
 )
 
 vim.keymap.set(
   "n",
   "<leader>sh",
-  ":hsplit<CR>",
+  ":hsplit<CR><C-w>j",
   { noremap = true, silent = true }
 )
 

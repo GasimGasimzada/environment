@@ -19,7 +19,16 @@ require("lazy").setup({
     "nvim-treesitter/nvim-treesitter",
     build = ":TSUpdate",
   },
-  { "folke/neodev.nvim", opts = {} },
+  {
+    "folke/lazydev.nvim",
+    ft = "lua",
+  },
+  {
+    "linrongbin16/gitlinker.nvim",
+    cmd = "GitLink",
+    opts = {},
+    keys = {},
+  },
   {
     "kdheepak/lazygit.nvim",
     dependencies = { "nvim-lua/plenary.nvim" },

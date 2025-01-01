@@ -43,10 +43,6 @@ cmp.setup({
   }, { name = "buffer" }),
 })
 
-vim.keymap.set("n", "<leader>gx", function()
-  require("trouble").toggle("diagnostics")
-end)
-
 vim.keymap.set("n", "ge", function()
   vim.diagnostic.open_float()
 end)
@@ -64,6 +60,7 @@ conform.setup({
     yaml = { "prettierd" },
     markdown = { "prettierd" },
     lua = { "stylua" },
+    go = { "gofmt", "goimports" },
   },
   format_on_save = {},
   formatters = {

@@ -31,7 +31,7 @@ return {
 
       vim.keymap.set(
         "n",
-        "<leader>tr",
+        "<leader>fe",
         ":Neotree reveal<CR>",
         { noremap = true, silent = true }
       )

@@ -9,7 +9,7 @@
           "style": "diamond",
           "foreground": "black",
           "background": "blue",
-          "template": "{{ if .SSHSession }} {{ end }}"
+          "template": "{{ if .SSHSession }}   {{ end }}"
         },
         {
           "type": "root",

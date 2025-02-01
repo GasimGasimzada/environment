@@ -5,6 +5,13 @@
       "alignment": "left",
       "segments": [
         {
+          "type": "session",
+          "style": "diamond",
+          "foreground": "black",
+          "background": "blue",
+          "template": "{{ if .SSHSession }} {{ end }}"
+        },
+        {
           "type": "root",
           "background": "#ffa500",
           "foreground": "black",

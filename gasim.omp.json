@@ -5,11 +5,17 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "black",
+          "type": "root",
+          "background": "#ffa500",
           "foreground": "black",
+          "template": " \uf0e7 "
+        },
+        {
           "style": "diamond",
+          "type": "text",
           "template": "\u0000",
-          "type": "text"
+          "background": "black",
+          "foreground": "black"
         },
         {
           "background": "black",
@@ -18,10 +24,13 @@
           "properties": {
             "home_icon": "~",
             "max_depth": 3,
-            "style": "agnoster_short"
+            "style": "agnoster_short",
+            "mapped_locations": {
+              "/": "\u0000"
+            }
           },
           "style": "powerline",
-          "template": "{{ .Path }} ",
+          "template": "{{if .RootDir}}/{{else}}{{ .Path }}{{end}} ",
           "type": "path"
         },
         {

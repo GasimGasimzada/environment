@@ -17,12 +17,3 @@ vim.keymap.set("n", "<leader>2", "2gt", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>3", "3gt", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>4", "4gt", { noremap = true, silent = true })
 vim.keymap.set("n", "<leader>5", "5gt", { noremap = true, silent = true })
-
-vim.keymap.set(
-  "n",
-  "<leader>tt",
-  ":ToggleTerm<CR>",
-  { noremap = true, silent = true }
-)
-
-vim.keymap.set("t", "<Esc>", [[<C-\><C-n>]], { noremap = true, silent = true })

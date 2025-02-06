@@ -5,6 +5,10 @@ return {
     config = function()
       require("nvim-treesitter.configs").setup({
         ensure_installed = { "tsx", "typescript", "rust" },
+        highlight = {
+          enabled = true,
+          additional_vim_regex_highlighting = false,
+        },
       })
     end,
   },

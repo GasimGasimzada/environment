@@ -29,29 +29,12 @@ return {
           vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", opts)
           vim.keymap.set(
             "n",
-            "gd",
-            "<cmd>lua vim.lsp.buf.definition()<cr>",
-            opts
-          )
-          vim.keymap.set(
-            "n",
-            "gr",
-            "<cmd>lua vim.lsp.buf.references()<cr>",
-            opts
-          )
-          vim.keymap.set(
-            "n",
-            "gs",
-            "<cmd>lua vim.lsp.buf.signature_help()<cr>",
-            opts
-          )
-
-          vim.keymap.set(
-            "n",
             "ge",
             "<cmd>lua vim.diagnostic.open_float({ border = 'rounded' })<cr>",
             opts
           )
+
+          vim.keymap.set("n", "gR", "<cmd>lua vim.lsp.buf.rename()<cr>", opts)
         end,
       })
 

@@ -42,4 +42,4 @@ setup_env() {
 install_homebrew
 change_screenshots_dir
 hide_desktop
-setup_env()
+setup_env

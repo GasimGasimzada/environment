@@ -1,3 +1,5 @@
+source $HOME/.gasim-env
+
 export GASIM_ENV=$HOME/.config/gasim
 export PATH=$PATH:$GASIM_ENV/bin/zsh
 export OMP_CACHE_DIR=$GASIM_ENV/.cache

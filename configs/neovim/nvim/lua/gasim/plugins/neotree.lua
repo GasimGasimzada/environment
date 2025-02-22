@@ -7,7 +7,7 @@ return {
       "nvim-tree/nvim-web-devicons",
       "MunifTanjim/nui.nvim",
     },
-    event = "VimEnter",
+    lazy = false,
     config = function()
       local function on_move(data)
         Snacks.rename.on_rename_file(data.source, data.destination)

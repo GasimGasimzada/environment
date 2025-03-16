@@ -16,6 +16,7 @@ return {
           char = { arrow = "─" },
         },
       },
+      input = {},
       picker = {
         layout = {
           preset = "dropdown",
@@ -46,7 +47,7 @@ return {
         desc = "Find files",
       },
       {
-        "<leader>fb",
+        "<leader>bb",
         function()
           Snacks.picker.buffers()
         end,

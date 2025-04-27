@@ -31,6 +31,13 @@ return {
     },
     keys = {
       {
+        "<leader>.",
+        function()
+          Snacks.scratch()
+        end,
+        desc = "Toggle scratch buffer",
+      },
+      {
         "<leader>gt",
         function()
           Snacks.lazygit()

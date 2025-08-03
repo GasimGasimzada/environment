@@ -60,7 +60,6 @@ return {
         end,
         desc = "Buffers",
       },
-
       {
         "gd",
         function()

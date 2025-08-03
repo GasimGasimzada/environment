@@ -21,7 +21,7 @@ if [ "$GASIM_SHELL" = "zsh" ]; then
     zstyle ":completion:*" menu select
 elif [ "$GASIM_SHELL" = "bash" ]; then
     bind 'set show-all-if-ambiguous on'
-    bind '"\t":menu-complete'
+    bind 'TAB:menu-complete'
 fi
 
 alias cd="z"

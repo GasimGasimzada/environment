@@ -15,6 +15,7 @@ export OMP_CACHE_DIR=$GASIM_ENV/.cache
 eval "$(oh-my-posh --init --shell $GASIM_SHELL --config $GASIM_ENV/gasim.omp.json)"
 eval "$(fnm env --use-on-cd --shell $GASIM_SHELL)"
 eval "$(zoxide init $GASIM_SHELL)"
+eval "$(atuin init $GASIM_SHELL)"
 
 if [ "$GASIM_SHELL" = "zsh" ]; then
     autoload -Uz compinit && compinit

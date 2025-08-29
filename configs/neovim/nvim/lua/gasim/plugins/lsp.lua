@@ -50,11 +50,17 @@ return {
           lua = { "stylua" },
           go = { "gofmt", "goimports" },
           nix = { "nixfmt" },
+          qml = { "qmlformat" },
         },
         format_on_save = {},
         formatters = {
           prettierd = { require_cwd = true },
           biome = { require_cwd = true },
+          qmlformat = {
+            command = "qmlformat",
+            args = { "--inplace", "$FILENAME" },
+            stdin = false, -- qmlformat edits files directly
+          },
         },
       })
     end,

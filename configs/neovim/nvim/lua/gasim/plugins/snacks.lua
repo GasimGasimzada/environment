@@ -61,6 +61,21 @@ return {
         desc = "Buffers",
       },
       {
+        "<leader>pp",
+        function()
+          Snacks.picker()
+        end,
+        desc = "Picker",
+      },
+
+      {
+        "<leader>dg",
+        function()
+          Snacks.picker.diagnostics()
+        end,
+        desc = "Diagnostics",
+      },
+      {
         "gd",
         function()
           Snacks.picker.lsp_definitions()

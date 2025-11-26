@@ -4,7 +4,12 @@ vim.api.nvim_create_autocmd("LspAttach", {
   desc = "LSP actions",
   callback = function(event)
     local opts = { buffer = event.buf }
-    vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>", opts)
+    vim.keymap.set(
+      "n",
+      "K",
+      "<cmd>lua vim.lsp.buf.hover{ border = 'rounded' }<cr>",
+      opts
+    )
     vim.keymap.set(
       "n",
       "ge",
@@ -19,7 +24,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
 vim.lsp.handlers["textDocument/hover"] = function(_, result, ctx, config)
   config = config or {}
   config.focus_id = ctx.method
-  config.border = "rounded"
 
   if not (result and result.contents) then
     return
@@ -41,3 +45,4 @@ vim.lsp.enable("typescript")
 vim.lsp.enable("tailwindcss")
 vim.lsp.enable("oxc")
 vim.lsp.enable("qml")
+vim.lsp.enable("rust")

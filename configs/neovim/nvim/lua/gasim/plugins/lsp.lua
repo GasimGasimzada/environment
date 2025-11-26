@@ -4,12 +4,27 @@ return {
     build = ":TSUpdate",
     config = function()
       require("nvim-treesitter.configs").setup({
-        ensure_installed = { "tsx", "typescript", "rust" },
+        ensure_installed = { "tsx", "typescript", "markdown", "rust" },
         highlight = {
           enable = true,
           additional_vim_regex_highlighting = false,
         },
       })
+    end,
+  },
+
+  {
+    "chrisgrieser/nvim-origami",
+    event = "VeryLazy",
+    opts = {
+      autoFold = {
+        enabled = true,
+        kinds = { "imports" }, ---@type lsp.FoldingRangeKind[]
+      },
+    },
+    init = function()
+      vim.opt.foldlevel = 99
+      vim.opt.foldlevelstart = 99
     end,
   },
 
@@ -23,7 +38,11 @@ return {
       appearance = {
         nerd_font_variant = "mono",
       },
-      completion = { documentation = { auto_show = true } },
+      completion = {
+        documentation = {
+          auto_show = true,
+        },
+      },
       sources = {
         default = { "lsp", "path", "snippets", "buffer" },
       },
@@ -38,10 +57,12 @@ return {
       local conform = require("conform")
       conform.setup({
         formatters_by_ft = {
-          javascript = { "prettierd", "biome" },
-          typescript = { "prettierd", "biome" },
-          javascriptreact = { "prettierd", "biome" },
-          typescriptreact = { "prettierd", "biome" },
+          javascript = { "prettierd", "biome-check" },
+          typescript = { "prettierd", "biome-check" },
+          javascriptreact = { "prettierd", "biome-check" },
+          typescriptreact = { "prettierd", "biome-check" },
+          md = { "prettierd" },
+          mdx = { "prettierd" },
           css = { "prettierd" },
           html = { "prettierd" },
           json = { "prettierd" },

@@ -14,7 +14,7 @@ return {
         },
       })
 
-      vim.cmd.colorscheme("catppuccin")
+      vim.cmd.colorscheme("kaiku")
     end,
   },
 }

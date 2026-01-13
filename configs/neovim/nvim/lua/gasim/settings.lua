@@ -5,6 +5,7 @@ vim.g.maplocalleader = ";"
 -- Line numbers
 vim.o.number = true
 vim.o.relativenumber = true
+vim.o.cursorline = true
 
 -- Search
 vim.o.ignorecase = true

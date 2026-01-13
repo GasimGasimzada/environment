@@ -13,8 +13,12 @@ return {
           grug_far = true,
         },
       })
-
-      vim.cmd.colorscheme("kaiku")
+    end,
+  },
+  {
+    "GasimGasimzada/intent.nvim",
+    config = function()
+      vim.cmd.colorscheme("intent")
     end,
   },
 }

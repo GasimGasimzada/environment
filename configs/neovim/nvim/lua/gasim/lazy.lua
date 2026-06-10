@@ -13,5 +13,5 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({
   spec = { { import = "gasim.plugins" } },
-  install = { colorscheme = { "catppuccin" } },
+  install = { colorscheme = { "intent" } },
 })

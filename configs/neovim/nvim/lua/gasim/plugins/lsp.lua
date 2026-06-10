@@ -1,14 +1,21 @@
 return {
   {
     "nvim-treesitter/nvim-treesitter",
+    branch = "main",
     build = ":TSUpdate",
     config = function()
-      require("nvim-treesitter.configs").setup({
-        ensure_installed = { "tsx", "typescript", "markdown", "rust" },
-        highlight = {
-          enable = true,
-          additional_vim_regex_highlighting = false,
-        },
+      require("nvim-treesitter").setup()
+      require("nvim-treesitter").install({
+        "tsx",
+        "typescript",
+        "markdown",
+        "rust",
+      })
+
+      vim.api.nvim_create_autocmd("FileType", {
+        callback = function()
+          pcall(vim.treesitter.start)
+        end,
       })
     end,
   },
@@ -57,10 +64,10 @@ return {
       local conform = require("conform")
       conform.setup({
         formatters_by_ft = {
-          javascript = { "prettierd", "biome-check" },
-          typescript = { "prettierd", "biome-check" },
-          javascriptreact = { "prettierd", "biome-check" },
-          typescriptreact = { "prettierd", "biome-check" },
+          javascript = { "oxfmt", "biome-check" },
+          typescript = { "oxfmt", "biome-check" },
+          javascriptreact = { "oxfmt", "biome-check" },
+          typescriptreact = { "oxfmt", "biome-check" },
           md = { "prettierd" },
           mdx = { "prettierd" },
           css = { "prettierd" },
